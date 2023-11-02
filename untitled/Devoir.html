@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Développement durable</title>
+    <!-- Styles Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Votre style personnalisé -->
+    <style>
+        /* Votre CSS personnalisé */
+        /* Assurez-vous de minimiser les styles pour une charge optimale */
+        .question-list {
+            list-style: none;
+            padding: 30px;
+        }
+
+        .question-list li {
+            margin-bottom: 50px;
+        }
+
+        .response {
+            display: none;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 50px;
+        }
+
+        .toggle-checkbox {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <!-- Barre de navigation Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Devoir écrit développement durable</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+</header>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-lg-6">
+            <ul class="question-list">
+                <li>
+                    <strong>Question 1 (5 points)</strong> <input type="checkbox" id="toggle1" class="toggle-checkbox" >
+                    <label for="toggle1" class="toggle-label">Afficher la réponse</label><br>
+                    Votre entreprise a décidé d’acquérir une solution SaaS pour son portail de statistiques auprès d’un
+                    éditeur et vous devez rédiger dans l’appel d’offre la partie sur les exigences techniques en termes
+                    de sobriété numérique. Listez les critères qui vous semblent non négociables sous forme d'user
+                    stories fictives.
+
+                </li>
+                <!-- Autres questions... -->
+                <li>
+                    <strong>Question 2 (5 points)</strong> <input type="checkbox" id="toggle2" class="toggle-checkbox">
+                    <label for="toggle2" class="toggle-label">Afficher la réponse</label><br>
+                    Quels éléments du cours allez-vous utiliser dans votre alternance (pour les personnes qui ont
+                    trouvé) et/ou votre vie étudiante (pour les personnes en recherche) ?
+                </li>
+                <li>
+                    <strong> Question 3 (3 points)</strong> <input type="checkbox" id="toggle3" class="toggle-checkbox">
+                    <label for="toggle3" class="toggle-label">Afficher la réponse</label><br>
+                    Comment évaluez-vous la maturité de sobriété numérique de votre organisation ? (ou d’une autre
+                    organisation si pas encore d’alternance). Détaillez les actions déjà mises en œuvre et ce qu’il
+                    faudrait selon vous améliorer.
+                </li>
+                <li>
+                    <strong> Question 4 (3 points)</strong> <input type="checkbox" id="toggle4" class="toggle-checkbox">
+                    <label for="toggle4" class="toggle-label">Afficher la réponse</label><br>
+                    Comment imaginez-vous le numérique en 2050 ?
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-6">
+            <!-- Espaces pour les réponses -->
+            <div id="response1" class="response">
+                Voici plusieurs user stories pour répondre à cette question : <br>
+                -En tant qu'acheteur, je dois m'assurer que l'éditeur s'engage à publier régulièrement des rapports de
+                durabilité détaillant l'empreinte carbone de la solution, les mesures prises pour réduire cette empreinte
+                et les objectifs d'amélioration continue.
+                <br> <br>
+                -En tant qu'administrateur du système, je dois m'assurer que la solution SaaS utilise des ressources
+                énergétiques durables et favorise une empreinte carbone minimale tout au long de son cycle de vie.
+                <br><br>
+                -En tant que gestionnaire de données, je veux une stratégie de sauvegarde et de recyclage des données afin de minimiser le stockage inutile et de favoriser la gestion responsable des informations.
+                <br><br>
+                -En tant que développeur, je veux des pratiques de codage efficientes pour limiter la consommation de ressources lors de l'exécution des opérations pour garantir des performances optimales sans gaspillage.
+                <br><br>
+                -En tant qu'utilisateur final, je veux que la solution SaaS assure une gestion efficace de la consommation énergétique pour réduire son empreinte carbone.
+            </div>
+            <!-- Autres espaces pour les réponses... -->
+            <div id="response2" class="response">
+                Dans mon alternance, je vais utiliser ces éléments du cours : <br>
+                - Supprimer les fonctionnalités non utilisées au niveau de la spécification <br>
+                - Optimiser le parcours utilisateur <br>
+                - Concevoir un service compatible avec des équipements anciens ou non <br>
+                - Eviter les animations en Javascript, en CSS ou autre au niveau de la conception <br>
+                - Utiliser LightHouse pour analyser les performances du service
+            </div>
+            <div id="response3" class="response">
+                La maturité de sobriété numérique de KLEE Group : <br>
+                Je pense que Klee est très engagé dans la rse, Klee est engagé comme participant à l'initiative de responsabilité sociétale du Global Compact
+                des Nations Unies et de ses 10 principes autour des droits de l’Homme, des normes du travail, de l’environnement et de la lutte contre la corruption.
+                <br>
+                Klee fait très souvent des ateliers, par exemple : "Testez en live l'éco-score pour optimiser l'empreinte carbone de votre solution numérique".
+                <br>
+                Ou encore par exemple : "La clé pour intégrer naturellement le numérique responsable dans le quotidien de vos équipes !".
+                <br>
+                Klee trie aussi énormément ses déchets, comme les capsules de cafés, avec la disposition d'une poubelle
+                <br><br>
+                Pour moi, il faudrait continuer sur cette lancée, en continuant de faire développer ces actions au sein des équipes même, voire former
+                les collaborateurs.
+            </div>
+            <div id="response4" class="response">
+                En 2050, j'imagine le numérique avec une IA omniprésente, une cybersécurité renforcée, l'impact environnemental (deviendra une obligation, avec
+                nouvelles technologies et des processus conçus pour minimiser l'impact sur l'environnement).
+                <br>
+                Peut-être la réalité virtuelle pour éviter les déplacements et réduire l'empreinte carbone
+                <br>
+                Les énergies renouvelables utilisées pour de nouvelles technologies.
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="bg-light text-center py-3 mt-4">
+    <!-- Pied de page -->
+    <p>&copy; 11/2023 - Serhat KUS, X-MAS-DEV-4-Groupe 03</p>
+</footer>
+<script src="js/script.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
