@@ -48,7 +48,7 @@
         <div class="col-lg-6">
             <ul class="question-list">
                 <li>
-                    <strong>Question 1 (5 points)</strong> <input type="checkbox" id="toggle1" class="toggle-checkbox" >
+                    <strong>Question 1 (5 points)</strong> <input type="checkbox" id="toggle1" class="toggle-checkbox">
                     <label for="toggle1" class="toggle-label">Afficher la réponse</label><br>
                     Votre entreprise a décidé d’acquérir une solution SaaS pour son portail de statistiques auprès d’un
                     éditeur et vous devez rédiger dans l’appel d’offre la partie sur les exigences techniques en termes
@@ -82,17 +82,21 @@
             <div id="response1" class="response">
                 Voici plusieurs user stories pour répondre à cette question : <br>
                 -En tant qu'acheteur, je dois m'assurer que l'éditeur s'engage à publier régulièrement des rapports de
-                durabilité détaillant l'empreinte carbone de la solution, les mesures prises pour réduire cette empreinte
+                durabilité détaillant l'empreinte carbone de la solution, les mesures prises pour réduire cette
+                empreinte
                 et les objectifs d'amélioration continue.
                 <br> <br>
                 -En tant qu'administrateur du système, je dois m'assurer que la solution SaaS utilise des ressources
                 énergétiques durables et favorise une empreinte carbone minimale tout au long de son cycle de vie.
                 <br><br>
-                -En tant que gestionnaire de données, je veux une stratégie de sauvegarde et de recyclage des données afin de minimiser le stockage inutile et de favoriser la gestion responsable des informations.
+                -En tant que gestionnaire de données, je veux une stratégie de sauvegarde et de recyclage des données
+                afin de minimiser le stockage inutile et de favoriser la gestion responsable des informations.
                 <br><br>
-                -En tant que développeur, je veux des pratiques de codage efficientes pour limiter la consommation de ressources lors de l'exécution des opérations pour garantir des performances optimales sans gaspillage.
+                -En tant que développeur, je veux des pratiques de codage efficientes pour limiter la consommation de
+                ressources lors de l'exécution des opérations pour garantir des performances optimales sans gaspillage.
                 <br><br>
-                -En tant qu'utilisateur final, je veux que la solution SaaS assure une gestion efficace de la consommation énergétique pour réduire son empreinte carbone.
+                -En tant qu'utilisateur final, je veux que la solution SaaS assure une gestion efficace de la
+                consommation énergétique pour réduire son empreinte carbone.
             </div>
             <!-- Autres espaces pour les réponses... -->
             <div id="response2" class="response">
@@ -105,20 +109,26 @@
             </div>
             <div id="response3" class="response">
                 La maturité de sobriété numérique de KLEE Group : <br>
-                Je pense que Klee est très engagé dans la rse, Klee est engagé comme participant à l'initiative de responsabilité sociétale du Global Compact
-                des Nations Unies et de ses 10 principes autour des droits de l’Homme, des normes du travail, de l’environnement et de la lutte contre la corruption.
+                Je pense que Klee est très engagé dans la rse, Klee est engagé comme participant à l'initiative de
+                responsabilité sociétale du Global Compact
+                des Nations Unies et de ses 10 principes autour des droits de l’Homme, des normes du travail, de
+                l’environnement et de la lutte contre la corruption.
                 <br>
-                Klee fait très souvent des ateliers, par exemple : "Testez en live l'éco-score pour optimiser l'empreinte carbone de votre solution numérique".
+                Klee fait très souvent des ateliers, par exemple : "Testez en live l'éco-score pour optimiser
+                l'empreinte carbone de votre solution numérique".
                 <br>
-                Ou encore par exemple : "La clé pour intégrer naturellement le numérique responsable dans le quotidien de vos équipes !".
+                Ou encore par exemple : "La clé pour intégrer naturellement le numérique responsable dans le quotidien
+                de vos équipes !".
                 <br>
                 Klee trie aussi énormément ses déchets, comme les capsules de cafés, avec la disposition d'une poubelle
                 <br><br>
-                Pour moi, il faudrait continuer sur cette lancée, en continuant de faire développer ces actions au sein des équipes même, voire former
+                Pour moi, il faudrait continuer sur cette lancée, en continuant de faire développer ces actions au sein
+                des équipes même, voire former
                 les collaborateurs.
             </div>
             <div id="response4" class="response">
-                En 2050, j'imagine le numérique avec une IA omniprésente, une cybersécurité renforcée, l'impact environnemental (deviendra une obligation, avec
+                En 2050, j'imagine le numérique avec une IA omniprésente, une cybersécurité renforcée, l'impact
+                environnemental (deviendra une obligation, avec
                 nouvelles technologies et des processus conçus pour minimiser l'impact sur l'environnement).
                 <br>
                 Peut-être la réalité virtuelle pour éviter les déplacements et réduire l'empreinte carbone
@@ -133,7 +143,46 @@
     <!-- Pied de page -->
     <p>&copy; 11/2023 - Serhat KUS, X-MAS-DEV-4-Groupe 03</p>
 </footer>
-<script src="js/script.js"></script>
+<script> const toggle1 = document.getElementById('toggle1');
+const response1 = document.getElementById('response1');
+toggle1.addEventListener('change', function () {
+    if (this.checked) {
+        response1.style.display = 'block';
+    } else {
+        response1.style.display = 'none';
+    }
+});
+
+const toggle2 = document.getElementById('toggle2');
+const response2 = document.getElementById('response2');
+toggle2.addEventListener('change', function () {
+    if (this.checked) {
+        response2.style.display = 'block';
+    } else {
+        response2.style.display = 'none';
+    }
+});
+
+const toggle3 = document.getElementById('toggle3');
+const response3 = document.getElementById('response3');
+toggle3.addEventListener('change', function () {
+    if (this.checked) {
+        response3.style.display = 'block';
+    } else {
+        response3.style.display = 'none';
+    }
+});
+
+const toggle4 = document.getElementById('toggle4');
+const response4 = document.getElementById('response4');
+toggle4.addEventListener('change', function () {
+    if (this.checked) {
+        response4.style.display = 'block';
+    } else {
+        response4.style.display = 'none';
+    }
+});
+</script>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
